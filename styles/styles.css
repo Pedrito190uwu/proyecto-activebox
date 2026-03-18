@@ -51,6 +51,7 @@ ul {
 .cabecera {
   width: 100%;
   background: url('../assets/images/Layer\ 34.png') center/cover no-repeat;
+
 }
 
 .navegacion {
@@ -158,7 +159,7 @@ ul {
 .trabajos__cuadricula {
   display: grid;
   grid-template-columns: repeat(2, 375px 25%);
-  grid-template-rows: repeat(1, 290px 50%);
+  grid-template-rows: repeat(1, 290px 50%); 
   gap: 2px;
 }
 
@@ -171,6 +172,7 @@ ul {
 
 .equipo {
   padding: 100px 15px;
+  padding-top: px;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -221,6 +223,9 @@ ul {
 
 }
 
+.fa {
+  height: 20px;
+}
 
 .equipo__redes a {
   display: grid;
@@ -400,16 +405,23 @@ cite{
   }
 
 
-  
 @media (min-width: 1280px) {
-  .trabajos__cuadricula {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-  }
-  .trabajos__elemento--ancho {
-    grid-column: span 2;
-  }
+
+  
+.trabajos__cuadricula {
+  display: grid;
+  grid-template-columns: repeat(2, 375px 25%);
+  grid-template-rows: repeat(1, 290px 50%); 
+  gap: 2px;
 }
+
+
+.trabajos__elemento img {
+  width: 100%;
+  height: 100%;
+}
+}
+
 
 @media (max-width: 1279px) {
   .hero__contenido h1 {
