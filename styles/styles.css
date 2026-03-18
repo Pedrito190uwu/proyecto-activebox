@@ -400,3 +400,422 @@ cite{
   }
 
 
+  
+@media (min-width: 1280px) {
+  .trabajos__cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .trabajos__elemento--ancho {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 1279px) {
+  .hero__contenido h1 {
+    font-size: 38px;
+  }
+  .trabajos__cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .trabajos__elemento--ancho {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero__contenido h1 {
+    font-size: 30px;
+  }
+  .hero__contenido p {
+    font-size: 14px;
+  }
+  .caracteristicas {
+    padding: 70px 15px;
+  }
+  .caracteristicas__cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+  .trabajos__cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trabajos__elemento--ancho {
+    grid-column: span 1;
+  }
+  .equipo {
+    padding: 70px 15px;
+  }
+  .equipo__cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .testimonios__contenido {
+    padding: 10px 30px;
+  }
+  .testimonios__contenido p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  .navegacion {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  .navegacion__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
+    justify-self: center;
+  }
+
+
+  .hero__contenido h1 {
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+  }
+
+  .hero__contenido p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+
+  .caracteristicas {
+    padding: 70px 20px;
+  }
+
+  .caracteristicas__cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 25px;
+  }
+
+  .caracteristicas__elemento h3 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .caracteristicas__elemento p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+
+  .trabajos__cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+
+  .equipo {
+    padding: 70px 20px;
+  }
+
+  .equipo__cuadricula {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 25px;
+    text-align: center;
+  }
+
+  .equipo__miembro h3 {
+    font-size: 16px;
+  }
+
+  .equipo__rol {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+
+  .equipo__miembro p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .equipo__redes {
+    justify-content: center;
+  }
+
+
+  .testimonios__cuadricula {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonios__imagen {
+    min-height: 250px;
+  }
+
+  .testimonios__contenido {
+    padding: 50px 40px;
+    text-align: center;
+  }
+
+  .testimonios__contenido p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+  }
+
+  .testimonios__puntos {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .equipo__foto {
+    margin-left: 50px;
+}
+
+
+  .descarga {
+    padding: 60px 20px;
+  }
+
+  .descarga h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .descarga p {
+    font-size: 10px;
+    margin-bottom: 25px;
+  }
+
+
+  .pie__cuadricula {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 20px 30px;
+    text-align: center;
+  }
+
+  .pie__columna--centro {
+    grid-column: auto;
+  }
+
+  .pie__columna h4 {
+    font-size: 10px;
+    margin-bottom: 14px;
+  }
+
+  .pie__columna p {
+    font-size: 13px;
+    margin: 0 auto;
+  }
+
+  .pie__redes {
+    justify-content: center;
+  }
+
+  .pie__inferior {
+    padding: 18px 25px;
+  }
+
+  .pie__inferior p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .navegacion {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+    padding: 15px 10px;
+  }
+
+  .navegacion__menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+    justify-self: center;
+  }
+
+  .navegacion__menu a {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero__contenido h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+
+  .hero__contenido p {
+    font-size: 13px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+
+  .boton {
+    padding: 12px 35px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .caracteristicas {
+    padding: 50px 15px;
+  }
+
+  .caracteristicas__cuadricula {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .caracteristicas__icono {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .caracteristicas__elemento h3 {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+
+  .caracteristicas__elemento p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .trabajos__cuadricula {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .equipo {
+    padding: 50px 15px;
+  }
+
+  .equipo__cuadricula {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .equipo__miembro h3 {
+    font-size: 17px;
+  }
+
+  .equipo__rol {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+  }
+
+  .equipo__miembro p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .equipo__redes {
+    justify-content: center;
+  }
+
+  .testimonios__imagen {
+    min-height: 200px;
+  }
+
+  .testimonios__contenido {
+    padding: 35px 20px;
+    text-align: center;
+  }
+
+  .testimonios__contenido p {
+    font-size: 16px;
+    line-height: 1.45;
+    margin-bottom: 12px;
+  }
+
+  cite {
+    font-size: 11px;
+    margin-bottom: 30px;
+  }
+
+  .testimonios__puntos {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .descarga {
+    padding: 50px 15px;
+  }
+
+  .descarga h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .descarga p {
+    font-size: 9px;
+    margin-bottom: 22px;
+  }
+
+  .pie__cuadricula {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 35px 20px 25px;
+    text-align: center;
+  }
+
+  .pie__columna--centro {
+    grid-column: auto;
+  }
+
+  .pie__columna h4 {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
+
+  .pie__columna p {
+    font-size: 13px;
+    margin: 0 auto;
+  }
+
+  .pie__redes {
+    justify-content: center;
+  }
+
+  .pie__inferior {
+    padding: 15px 20px;
+  }
+
+  .pie__inferior p {
+    font-size: 11.5px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 352px) {
+
+  .hero__contenido h1 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+
+  .equipo__foto {
+    display: flex;
+    justify-content: center;
+  }
+
+  .equipo__foto img {
+    width: 90%;
+    height: auto;
+  }
+
+  .caracteristicas__icono {
+    width: 40px;
+    height: 51px;
+  }
+
+}
