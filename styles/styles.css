@@ -155,21 +155,55 @@ ul {
   line-height: 1.8;
 }
 
-
 .trabajos__cuadricula {
   display: grid;
   grid-template-columns: repeat(2, 375px 25%);
-  grid-template-rows: repeat(1, 290px 50%); 
+  grid-template-rows: repeat(1, 290px 50%);
   gap: 2px;
 }
 
+.trabajos__elemento {
+  position: relative;
+  overflow: hidden;
+}
 
 .trabajos__elemento img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
+.trabajos__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(207, 45, 45, 0.82);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
+.trabajos__elemento:hover .trabajos__overlay {
+  opacity: 1;
+}
+
+.trabajos__overlay h3 {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+.trabajos__overlay span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+  letter-spacing: 0.07em;
+}
 .equipo {
   padding: 100px 15px;
   padding-top: px;
